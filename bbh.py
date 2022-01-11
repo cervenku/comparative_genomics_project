@@ -35,3 +35,7 @@ for pair in shared_hits:
         bbh_orthologs.append(top_hit_orthologs_A)
 
 print("Number of orthologs found by BBH: " + str(len(bbh_orthologs)))
+
+with open("bbh.txt",'w',encoding = 'utf-8') as f:
+    for pair in bbh_orthologs:
+        f.write(pair + '\n')
